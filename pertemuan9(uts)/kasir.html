@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nobunaga Skuy</title>
+<link rel="stylesheet" type="text/css" href="css/kasir.css">
+
+<link rel="shortcut icon" href="img/nobu-logo.jpg">
+<script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+<script type = "text/javascript">
+    document.getElementById("tombol_form").
+    addEventListener("click", calc);
+    function calc(){
+        var nilai_form=document.getElementById("nama").value;
+    document.getElementById("hasil_nama").innerHTML=nilai_form;
+    }
+    </script>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a><img src="img/nobu-logo.jpg" style="width: 45px;"></a>
+    <a><p>Nobunaga Skuy!</p></a>
+    <!-- <a href="#"style="float:right" onclick="document.getElementById('id01').style.display='block'"><p>Login</p></a> -->
+    <a href="biodata.html" style="float:right"><p>Biodata</p></a>
+    <a href="kasir.html" style="float:right"><p>Kasir</p></a>
+    <a href="about_us.html" style="float:right"><p>About Us</p></a>
+    <a href="index.html" style="float:right"><p>Home</p></a>
+  </div>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Daftar Menu</h2>
+      <hr style="margin-bottom: 25px;">
+      
+      <table >
+        
+        <tr>
+          
+          <td>Menu</td>
+          <td>Harga</td>
+        </tr>
+        <tr>
+          <td>Takoyaki Mix</td>
+          <td>16.000</td>
+        </tr>
+        <tr>
+          <td>Takoyaki Keju</td>
+          <td>12.000</td>
+        </tr>
+        <tr>
+          <td>Takoyaki Ayam</td>
+          <td>10.000</td>
+        </tr>
+        <tr>
+          <td style="padding-right: 10px;">Takoyaki Octopus</td>
+          <td>13.000</td>
+        </tr>
+        <tr>
+            <td>Takoyaki Crab</td>
+            <td>13.000</td>
+          </tr>
+      </table>
+    </div>
+</div>
+
+<div class="rightcolumn">
+    <div class="card">
+      <h3>Kasir</h3>
+      <hr>
+      <iframe src="kasir-tes.html" height="250px" width="600px"></iframe>
+	  
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Design by: Vega Anggaresta</h2>
+</div>
+
+</body>
+</html>
