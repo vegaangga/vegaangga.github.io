@@ -18,6 +18,10 @@
     document.getElementById("hasil_nama").innerHTML=nilai_form;
     }
     </script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -34,13 +38,14 @@
 
 
 
-<div class="row">
+<div class="row" style="padding: 19px;">
   <div class="leftcolumn">
     <div class="card">
       <h2>Daftar Menu</h2>
+      
       <hr style="margin-bottom: 25px;">
       
-      <table >
+      <table class="table table-hover">
         
         <tr>
           
@@ -75,7 +80,10 @@
     <div class="card">
       <h3>Kasir</h3>
       <hr>
-      <iframe src="kasir-tes.html" height="250px" width="600px"></iframe>
+      <div class="alert alert-danger">
+        <strong>Hati-Hati! </strong> Saat menginputkan pesanan
+      </div>
+      <iframe src="kasir-tes.html" height="300px" width="600px"></iframe>
 	  
     </div>
   </div>

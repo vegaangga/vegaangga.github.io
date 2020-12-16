@@ -7,6 +7,12 @@
 <link rel="stylesheet" type="text/css" href="css/Style.css">
 <link rel="stylesheet" type="text/css" href="css/Login.css">
 <link rel="shortcut icon" href="img/nobu-logo.jpg">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -55,23 +61,34 @@ class="close" title="Close Modal">&times;</span>
 </div>
 -->
 
-<div class="row">
+<div class="row" style="padding: 20px;">
   <div class="leftcolumn">
     <div class="card">
       <h2>ABOUT US</h2>
+      <div class="jumbotron">
+        
       <hr style="margin-bottom: 25px;">
       <img src="img/nobu.png" width="250px" style="display: block; margin: auto;">
       <p style=" text-indent: 50px; text-align: justify;">
         Nobunaga Sushi hadir di Mojokerto untuk memanjakan lidah para penggemar kuliner. Sushi merupakan makanan khas jepang yang tidak diragukan lagi gizinya karena kesegaran bahan-bahan yang digunakan. Untuk menyesuaikan dengan budaya dan cita rasa khas indonesia, bahan-bahan yang digunakan di Nobunaga Sushi menggunakan bahan-bahan yang halal, tidak menggunakan mirin, matang dan terjamin kebersihannya. Kualitas, perpaduan rasa dan kebersihan serta tampilan kemasan tetap menjadi prioritas, terutama tingkat kepuasan pelanggan.
       </p>
+      </div>
+      
     </div>
     <div class="card">
       <h2>FIND US</h2>
       <hr style="margin-bottom: 25px;">
-      <img src="img/call.png" width="20px" style="float: left; margin-right: 20px;">
-      <p>0857-3600-7035</p>
-      <img src="img/email.png" width="20px" style="float: left; margin-right: 20px;">
-      <a href = "mailto: nobunagasushi.mojokerto@gmail.com"><p>nobunagasushi.mojokerto@gmail.com</p></a>
+      
+      <img src="img/call.png" width="20px" style="float: left; margin-right: 20px;" data-toggle="collapse" data-target="#demo">
+      
+      <div id="demo" class="collapse">
+        <p>0857-3600-7035</p>
+      </div>
+      <img src="img/email.png" width="20px" style="float: left; margin-right: 20px;" data-toggle="collapse" data-target="#demo1">
+      <div id="demo1" class="collapse" style="margin-bottom: 10px;">
+        <a href = "mailto: nobunagasushi.mojokerto@gmail.com"><p>nobunagasushi.mojokerto@gmail.com</p></a>
+      
+      </div>
       <iframe src="googlemap.html" height="500" width="950px" title="Iframe Example"></iframe>
     </div>
     

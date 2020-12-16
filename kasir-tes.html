@@ -2,7 +2,12 @@
 <!-- TI-2C -->
 <html>
   <head>
-    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="jquery-3.5.1.js"></script>
 	
 	<script>
@@ -74,21 +79,22 @@
 
             }
         </script>
+        
   </head>
   <body>
-    <table>
+    <table >
         <tr>
             <td><label for="id">ID Pembeli</label></td>
-            <td><input type="text" id="id" name="id" required></td>
+            <td><input class="form-control" type="text" id="id" name="id" required></td>
       </tr>
       <tr>
         <td><label for="nama_customer">Nama Pembeli</label></td>
-        <td><input type="text" id="nama_customer" name="nama_customer" required></td>
+        <td><input class="form-control" type="text" id="nama_customer" name="nama_customer" required></td>
     </tr>
     <tr>
         <td><label for="member">Tipe Pelanggan</label></td>
-        <td><input type="radio" id="member" name="member" value="Member" required>&nbsp;<label>Member</label></td>
-        <td><input type="radio" id="member" name="member" value="Non Member" required>&nbsp; <label>Non Member</label></td>
+        <td><input class="form-check-inline" type="radio" id="member" name="member" value="Member" required>&nbsp;<label>Member</label></td>
+        <td><input class="form-check-inline" type="radio" id="member" name="member" value="Non Member" required>&nbsp; <label>Non Member</label></td>
     </tr>
   <tr>
     <td><label for="menu">Nama Makanan</label></td>
@@ -103,9 +109,9 @@
 </tr>
 <tr>
     <td><label for="jumlah">Jumlah</label></td>
-    <td><input type="number" id="jumlah" name="jumlah" required></td>
-    <td><button type="submit" id="submit" name="submit" class="button" onclick="form_process()">Submit</button></td>
-    <td><input type="submit"  value="Reset" onClick="document.location.reload(true)"></td>
+    <td><input class="form-control" type="number" id="jumlah" name="jumlah" required></td>
+    <td><button type="submit" id="submit" name="submit" class="btn btn-primary" onclick="form_process()">Submit</button></td>
+    <td><input class="form-control" type="submit" type="button" class="btn btn-danger" value="Reset" onClick="document.location.reload(true)"></td>
     <script>
         function reloadpage()
         {
@@ -115,7 +121,7 @@
 </tr>	      
     </table>
     <p style="text-align: center;">================Struk================</p>
-    <table border='1' id='tabelinput'>
+    <table border='1' id='tabelinput' class="table table-hover">
         <tr>
               <td>ID</td>
               <td>NAMA</td>

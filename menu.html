@@ -4,7 +4,19 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <style>
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;}
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -106,37 +118,39 @@ img {vertical-align: middle;}
 </head>
 <body>
 
-<div class="slideshow-container">
+  <div id="demo" class="carousel slide" data-ride="carousel">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="img/nobu-tako.png">
-  <div class="text">Caption Text</div>
-</div>
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/nobu-tako.png" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="img/nobu-daimyo.png" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="img/nobu-sushi1.png" alt="New York" width="1100" height="500">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="img/nobu-daimyo.png">
-  <div class="text">Caption Two</div>
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="img/nobu-sushi1.png">
-  <div class="text">Caption Three</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
 <br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
 
 <script>
 var slideIndex = 1;
